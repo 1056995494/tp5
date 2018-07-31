@@ -1,0 +1,7 @@
+<h2>测试</h2>
+		<form method="POST" action="{:url('test')}">
+			名字<input type="text" name="name"/>
+			年龄<input type="text" name="age"/>
+			<input type="hidden" name="__token__" value="{$Request.token}" />
+			<input type="submit" value="提交"/>
+		</form>

@@ -1,0 +1,8 @@
+<h2> 大头</h2>
+<form method="post" class="form" action="{:url('check')}">
+输入验证码:<input type="text" name="code"><br>
+<div><img src="/captcha" onclick="this.src='/captcha?id='+Math.random()" alt="验证码" title="点击刷新" style="cursor: pointer"></div>
+<input type="submit" class="btn" value="提交">
+
+</form>
+<button onclick="test()">测试</button>

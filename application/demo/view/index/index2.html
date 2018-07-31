@@ -1,0 +1,8 @@
+<h2>用户列表（{$list->currentPage()}）</h2> 
+<table border='1'>
+	<tr><th>ID</th><th>昵称</th><th>密码</th><th>生日</th></tr>
+	<volist name='list' id='user'>
+	<tr><td>{$user.id}</td><td>{$user.nickname}</td><td>{$user.password}</td><td>{$user.birthday}</td></tr>
+	</volist>
+<table>
+{$list->render()}

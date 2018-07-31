@@ -1,0 +1,39 @@
+<div id="container">
+<h2>用户数量（{$count}）</h2>
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>联系人</th>
+			<th>地区</th>
+			<th>户型</th>
+			<th>联系电话</th>
+			<th>提交时间</th>
+			<th>更新时间</th>
+			<th>备注</th>
+		</tr>
+	<thead>
+	<tbody>
+		<volist name="list" id="user">
+			<tr>
+				<td>{$user.id}</td>
+				<td>{$user.name}</td>
+				<td>{$user.region}</td>
+				<td>{$user.house}</td>
+				<td>{$user.phone}</td>	
+				<td>{$user.create_time}</td>
+				<td>{$user.update_time}</td>
+				<td>{$user.note}</td>
+			</tr>
+		</volist>
+	</tbody>
+</table>
+<ul id="page">
+	<li><a href="{:url('yangzai/index/index')}?page=1">首页</a></li>
+	<li><a href="{:url('yangzai/index/index')}?page={$pre}">上一页</a></li>	
+	<li><a href="{:url('yangzai/index/index')}?page={$next}">下一页</a></li>
+	<li><a href="{:url('yangzai/index/index')}?page={$ps}">尾页</a></li>
+</ul>
+<button onclick="deletet()">删除</button>
+</div>
+<div id="clear"></div>

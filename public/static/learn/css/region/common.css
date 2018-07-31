@@ -1,0 +1,59 @@
+body{
+	color: #333;
+	font: 16px Verdana, "Helvetica Neue", helvetica, Arial, 'Microsoft YaHei', sans-serif;
+	margin: 0px;
+	padding: 20px;
+}
+a{
+	color: #868686;
+	cursor: pointer;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+h2{
+	color: #4288ce;
+	font-weight: 400;
+	padding: 6px 0;
+	margin: 6px 0 0;
+	font-size: 28px;
+	border-bottom: 1px solid #eee;
+}
+
+.info{
+	padding: 12px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.copyright{
+	margin-top: 24px;
+	padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+input{
+	margin:3px;
+}
+#person{
+	display:block;
+	width:5em;
+	position:relative;
+	height:1.2em;
+	
+}
+.cancel{
+	visibility:hidden;
+	position:absolute;
+}
+#validate{
+	border-radius:5%;
+	background:lightgreen;
+	cursor:pointer;
+}
+#validate:active{
+	background:red;
+}
+#validate:hover{
+	background:green;
+	color:white;
+}

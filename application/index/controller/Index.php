@@ -2,6 +2,6 @@
 namespace app\index\controller;
 class Index{
 	public function index(){
-	return 7758;
+	return 77589;
 }
 }

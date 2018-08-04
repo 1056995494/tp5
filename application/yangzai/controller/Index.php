@@ -1,6 +1,6 @@
 <?php
 namespace app\yangzai\controller;
-use app\api\model\Decorate;
+use app\api\model\Decoration;
 use think\Controller;
 class Index extends Controller
 {
